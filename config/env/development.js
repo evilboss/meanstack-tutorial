@@ -6,8 +6,8 @@ module.exports = {
 		title: 'Bossable - Development Environment'
 	},
 	facebook: {
-		clientID: process.env.FACEBOOK_ID || 'APP_ID',
-		clientSecret: process.env.FACEBOOK_SECRET || 'APP_SECRET',
+		clientID: process.env.FACEBOOK_ID || '1555912951357715',
+		clientSecret: process.env.FACEBOOK_SECRET || '92c10c22dc90d3f87a0cf761eccf5412',
 		callbackURL: '/auth/facebook/callback'
 	},
 	twitter: {
