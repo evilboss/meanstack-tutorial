@@ -10,10 +10,53 @@ var mongoose = require('mongoose'),
  * Customer Schema
  */
 var CustomerSchema = new Schema({
-    name: {
+    firstName: {
         type: String,
         default: '',
         required: 'Please fill Customer name',
+        trim: true
+    },
+    lastName: {
+        type: String,
+        default: '',
+        required: 'Please fill Customer last name',
+        trim: true
+    },
+    suburb: {
+        type: String,
+        default: '',
+        trim: true
+    },
+    country: {
+        type: String,
+        default: '',
+        trim: true
+    },
+    industry: {
+        type: String,
+        default: '',
+        trim: true
+    },
+    email: {
+        type: String,
+        default: '',
+        trim: true,
+        validate: [validateLocalStrategyProperty, 'Please fill in your email'],
+        match: [/.+\@.+\..+/, 'Please fill a valid email address']
+    },
+    phone: {
+        type: String,
+        default: '',
+        trim: true
+    },
+    refered: {
+        type: Boolean,
+        default: '',
+        trim: true
+    },
+    channel: {
+        type: String,
+        default: '',
         trim: true
     },
     created: {
