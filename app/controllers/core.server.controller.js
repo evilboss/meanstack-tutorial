@@ -9,3 +9,6 @@ exports.index = function(req, res) {
 		request: req
 	});
 };
+exports.verify = function(req,res,next){
+    res.write("yeah");
+};
