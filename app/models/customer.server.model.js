@@ -50,9 +50,7 @@ var CustomerSchema = new Schema({
         trim: true
     },
     refered: {
-        type: Boolean,
-        default: '',
-        trim: true
+        type: Boolean
     },
     channel: {
         type: String,
