@@ -10,5 +10,5 @@ exports.index = function(req, res) {
 	});
 };
 exports.verify = function(req,res,next){
-    res.write("yeah");
+    res.write('yeah');
 };
