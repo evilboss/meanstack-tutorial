@@ -7,8 +7,12 @@
     text-align: left;
 }
 .cust-list{
-    font-size: 100px;
+    font-size: 150px;
 }
 .text-pink{
     color: #ec407a;
+}
+.extra-space{
+    padding-top: 15px;
+    padding-bottom: 15px;
 }

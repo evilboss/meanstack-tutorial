@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-	db: process.env.MONGOHQ_URL || process.env.MONGOLAB_URI || 'mongodb://' + (process.env.DB_1_PORT_27017_TCP_ADDR || 'localhost') + '/bossable',
+	db: process.env.MONGOHQ_URL || process.env.MONGOLAB_URI || 'mongodb://bossableUser:password@ds031531.mongolab.com:31531/bossable',
 	assets: {
 		lib: {
 			css: [
